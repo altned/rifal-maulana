@@ -5,10 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rifal Maulana – DevOps & SRE</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <style>
+    .bg-gradient-animation {
+      background: linear-gradient(-45deg, #0f172a, #1e293b, #0ea5e9, #14b8a6);
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+    }
+    @keyframes gradient {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+    .fade-in {
+      opacity: 0;
+      animation: fadeIn 2s ease-in-out forwards;
+    }
+    @keyframes fadeIn {
+      to {opacity: 1;}
+    }
+  </style>
 </head>
-<body class="bg-gray-900 text-gray-100 font-sans">
+<body class="bg-gradient-animation text-gray-100 font-sans">
 
-  <section class="min-h-screen flex flex-col justify-center items-center text-center px-4">
+  <section class="min-h-screen flex flex-col justify-center items-center text-center px-4 fade-in">
     <h1 class="text-4xl md:text-6xl font-bold text-cyan-400">Rifal Maulana</h1>
     <p class="mt-4 text-xl">DevOps Engineer & Site Reliability Enthusiast</p>
     <p class="mt-2 text-gray-400 italic">“Automating everything, monitoring every byte.”</p>
@@ -17,14 +37,30 @@
   <section class="max-w-4xl mx-auto mt-12 px-4">
     <h2 class="text-2xl text-cyan-300 mb-4">Tech Stack</h2>
     <div class="flex flex-wrap gap-4">
-      <span class="bg-gray-800 px-3 py-1 rounded">Docker</span>
-      <span class="bg-gray-800 px-3 py-1 rounded">Kubernetes</span>
-      <span class="bg-gray-800 px-3 py-1 rounded">Terraform</span>
-      <span class="bg-gray-800 px-3 py-1 rounded">Ansible</span>
-      <span class="bg-gray-800 px-3 py-1 rounded">Prometheus</span>
-      <span class="bg-gray-800 px-3 py-1 rounded">Grafana</span>
-      <span class="bg-gray-800 px-3 py-1 rounded">Linux</span>
-      <span class="bg-gray-800 px-3 py-1 rounded">GCP</span>
+      <span class="flex items-center gap-2 bg-gray-800 px-3 py-1 rounded">
+        <i class="devicon-docker-plain colored text-2xl"></i>Docker
+      </span>
+      <span class="flex items-center gap-2 bg-gray-800 px-3 py-1 rounded">
+        <i class="devicon-kubernetes-plain colored text-2xl"></i>Kubernetes
+      </span>
+      <span class="flex items-center gap-2 bg-gray-800 px-3 py-1 rounded">
+        <i class="devicon-terraform-plain colored text-2xl"></i>Terraform
+      </span>
+      <span class="flex items-center gap-2 bg-gray-800 px-3 py-1 rounded">
+        <i class="devicon-ansible-plain colored text-2xl"></i>Ansible
+      </span>
+      <span class="flex items-center gap-2 bg-gray-800 px-3 py-1 rounded">
+        <i class="devicon-prometheus-original colored text-2xl"></i>Prometheus
+      </span>
+      <span class="flex items-center gap-2 bg-gray-800 px-3 py-1 rounded">
+        <i class="devicon-grafana-plain colored text-2xl"></i>Grafana
+      </span>
+      <span class="flex items-center gap-2 bg-gray-800 px-3 py-1 rounded">
+        <i class="devicon-linux-plain colored text-2xl"></i>Linux
+      </span>
+      <span class="flex items-center gap-2 bg-gray-800 px-3 py-1 rounded">
+        <i class="devicon-googlecloud-plain colored text-2xl"></i>GCP
+      </span>
     </div>
   </section>
 
